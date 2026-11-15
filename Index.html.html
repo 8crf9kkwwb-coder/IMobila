@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="iMOBILA - mobilier la comandă, producție proprie, transport și montaj în București și împrejurimi.">
+<title>iMOBILA | Mobilă la comandă</title>
+<style>
+:root{--green:#20372f;--green2:#2f5144;--cream:#eee5d8;--sand:#d9c7ae;--ink:#202722;--muted:#68736c;--white:#fff;--line:#e7e9e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fbfaf7;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(251,250,247,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:27px;font-weight:850;letter-spacing:-1.5px;color:var(--green)}.logo span{color:#b58e61}.links{display:flex;gap:25px;font-size:14px;color:#47534c}.links a:hover{color:#a57d50}.navbtn,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:white;padding:13px 19px;border-radius:7px;font-weight:700;font-size:14px;border:0;cursor:pointer}.menu{display:none;background:none;border:0;font-size:25px}
+.hero{background:var(--green);color:white;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px;padding:72px 0}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d8c5a9;font-weight:800}.hero h1{font-size:clamp(40px,5.4vw,66px);line-height:1.04;letter-spacing:-2.6px;margin:18px 0}.hero p{font-size:17px;color:#dbe3dd;max-width:510px}.hero .btn{background:var(--cream);color:var(--green);margin-top:17px}.hero-art{min-height:390px;border-radius:16px;position:relative;overflow:hidden;background:linear-gradient(145deg,#c8b69e,#8b9a88 50%,#4a6555);display:flex;align-items:end;padding:22px}.hero-art:before{content:"";position:absolute;inset:9% 8% 0;background:linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.18) 1px,transparent 1px);background-size:42px 42px;opacity:.5}.room{position:relative;width:100%;height:260px;background:linear-gradient(180deg,#e9e0d2 0 68%,#a58e72 68%);border-radius:8px;box-shadow:0 18px 45px #16251f55;overflow:hidden}.room:before{content:"";position:absolute;left:7%;top:12%;width:32%;height:48%;background:#f4f0e8;border:10px solid #b58f68;box-shadow:inset 0 0 0 2px #d7c7b2}.room:after{content:"";position:absolute;right:7%;bottom:16%;width:43%;height:42%;background:linear-gradient(90deg,#b18a5e 0 32%,#d4c0a5 32% 35%,#b18a5e 35% 67%,#d4c0a5 67% 70%,#b18a5e 70%);border-radius:4px 4px 0 0;box-shadow:0 13px 0 #806449}
+.art-label{position:absolute;left:22px;top:20px;background:#ffffffdf;color:var(--green);padding:9px 13px;border-radius:5px;font-size:12px;font-weight:800;letter-spacing:1px}
+section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 36px}.section-head .eyebrow{color:#9b7952}.section-head h2{font-size:clamp(29px,4vw,42px);letter-spacing:-1.4px;line-height:1.1;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px #263b3012}.photo{height:170px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e7dfd3,#b7c2b3)}.photo:before{content:"";position:absolute;inset:18% 12% 0;background:linear-gradient(90deg,#d9c5a9 0 48%,#f0e9de 48% 51%,#c5a77f 51%);box-shadow:0 12px 25px #4c433333;border-radius:5px 5px 0 0}.photo.kitchen{background:linear-gradient(135deg,#d7d1c4,#9cae9e)}.photo.bed{background:linear-gradient(135deg,#e8ddd0,#c3b7a8)}.photo.living{background:linear-gradient(135deg,#d9d4c8,#a8b6aa)}.photo.hall{background:linear-gradient(135deg,#d6c7b6,#9eaa9f)}.cardbody{padding:17px}.card h3{margin:0 0 5px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px}
+.band{background:#f0ece4}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.feature{padding:24px;background:white;border-radius:12px;border:1px solid #e8e3da}.feature .num{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#e8eee8;color:var(--green);font-weight:850}.feature h3{margin:15px 0 7px}.feature p{color:var(--muted);font-size:14px;margin:0}
+.portfolio{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:15px}.project{height:230px;border-radius:12px;overflow:hidden;position:relative;background:linear-gradient(145deg,#c6b69f,#718879)}.project:nth-child(2){background:linear-gradient(145deg,#e3d9ca,#a9b5a8)}.project:nth-child(3){background:linear-gradient(145deg,#d1c0aa,#8e9b91)}.project:before{content:"";position:absolute;inset:25% 12% 0;background:linear-gradient(90deg,#b38e65 0 30%,#eee5d8 30% 33%,#b38e65 33% 65%,#eee5d8 65% 68%,#b38e65 68%);box-shadow:0 10px 25px #26352c44}.project span{position:absolute;left:16px;bottom:14px;color:white;font-weight:800;text-shadow:0 1px 8px #000}
+.cta{background:var(--green);color:white;border-radius:16px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.cta h2{font-size:34px;line-height:1.1;margin:0 0 10px;letter-spacing:-1px}.cta p{color:#d8e1da;margin:0}.cta .btn{background:var(--cream);color:var(--green);white-space:nowrap}
+form{max-width:760px;margin:auto;background:white;padding:28px;border:1px solid var(--line);border-radius:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px}label{font-size:13px;font-weight:750;display:block;margin-bottom:6px}input,select,textarea{width:100%;border:1px solid #dce1dc;border-radius:7px;padding:12px;font:inherit;background:#fff}textarea{min-height:115px;resize:vertical}.full{grid-column:1/-1}.formnote{font-size:12px;color:var(--muted);margin:0}
+footer{background:#172a23;color:#e7eee8;padding:36px 0;margin-top:76px}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot p{font-size:13px;color:#b9c7bd;margin:5px 0 0}
+@media(max-width:800px){.links{display:none}.menu{display:block}.navbtn{display:none}.hero-grid{grid-template-columns:1fr;padding:52px 0}.hero-art{min-height:300px}.room{height:220px}.cards{grid-template-columns:repeat(2,1fr)}.portfolio{grid-template-columns:1fr 1fr}.project:first-child{grid-column:1/-1}.features{grid-template-columns:1fr}.cta{grid-template-columns:1fr;padding:30px}.cta .btn{width:fit-content}}
+@media(max-width:480px){.wrap{width:min(100% - 28px,1120px)}.cards{gap:10px}.photo{height:130px}.cardbody{padding:12px}.portfolio{grid-template-columns:1fr}.project:first-child{grid-column:auto}.project{height:190px}form{grid-template-columns:1fr;padding:18px}.full{grid-column:auto}.foot{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#acasa">i<span>MOBILA</span></a>
+<nav class="links"><a href="#categorii">Mobilier</a><a href="#despre">De ce noi</a><a href="#portofoliu">Proiecte</a><a href="#contact">Cere ofertă</a></nav>
+<a class="navbtn" href="#contact">Solicită o ofertă</a><button class="menu" aria-label="Meniu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+</div></header>
+<main>
+<section class="hero" id="acasa"><div class="wrap hero-grid">
+<div><div class="eyebrow">Producție proprie · București și împrejurimi</div><h1>Mobilă făcută pentru casa ta.</h1><p>Proiectăm și producem mobilier la comandă, adaptat spațiului, stilului și bugetului tău. De la prima idee până la montaj.</p><a class="btn" href="#contact">Cere o ofertă gratuită&nbsp; →</a></div>
+<div class="hero-art"><div class="art-label">DESIGN · PRODUCȚIE · MONTAJ</div><div class="room"></div></div>
+</div></section>
+<section id="categorii"><div class="wrap"><div class="section-head"><div class="eyebrow">Ce realizăm</div><h2>Mobilier pentru fiecare încăpere</h2><p>Soluții practice și bine gândite, realizate pe dimensiunile și preferințele tale.</p></div>
+<div class="cards">
+<article class="card"><div class="photo kitchen"></div><div class="cardbody"><h3>Bucătării la comandă</h3><p>Organizare inteligentă și finisaje alese de tine.</p></div></article>
+<article class="card"><div class="photo bed"></div><div class="cardbody"><h3>Dormitoare</h3><p>Mobilier confortabil, adaptat spațiului tău.</p></div></article>
+<article class="card"><div class="photo living"></div><div class="cardbody"><h3>Livinguri</h3><p>Comode TV, biblioteci și mobilier personalizat.</p></div></article>
+<article class="card"><div class="photo hall"></div><div class="cardbody"><h3>Dressinguri și holuri</h3><p>Depozitare eficientă, de la podea până la tavan.</p></div></article>
+</div></div></section>
+<section class="band" id="despre"><div class="wrap"><div class="section-head"><div class="eyebrow">De ce iMOBILA</div><h2>Direct de la producător</h2><p>Discuți direct cu echipa care realizează mobilierul. Fără complicații, cu soluții potrivite proiectului tău.</p></div>
+<div class="features"><article class="feature"><div class="num">01</div><h3>Producție proprie</h3><p>Mobilier realizat la comandă, în funcție de dimensiunile și cerințele proiectului.</p></article><article class="feature"><div class="num">02</div><h3>Prețuri accesibile</h3><p>Propunem variante potrivite bugetului, fără să pierdem din vedere funcționalitatea.</p></article><article class="feature"><div class="num">03</div><h3>Transport și montaj</h3><p>Ne ocupăm de livrare și montaj în București și în zonele apropiate, în funcție de proiect.</p></article></div></div></section>
+<section id="portofoliu"><div class="wrap"><div class="section-head"><div class="eyebrow">Inspirație</div><h2>Proiecte care pornesc de la ideea ta</h2><p>Aici vom adăuga fotografii reale din lucrările tale, pe măsură ce le pregătim.</p></div>
+<div class="portfolio"><div class="project"><span>Bucătărie personalizată</span></div><div class="project"><span>Mobilier pentru living</span></div><div class="project"><span>Dressing la comandă</span></div></div></div></section>
+<section class="band"><div class="wrap"><div class="cta"><div><h2>Ai un proiect în minte?</h2><p>Spune-ne ce mobilier îți dorești. Discutăm detaliile și pregătim o ofertă adaptată proiectului tău.</p></div><a class="btn" href="#contact">Solicită o ofertă →</a></div></div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">Hai să discutăm</div><h2>Cere o ofertă pentru proiectul tău</h2><p>Completează detaliile de mai jos. Formularul este demonstrativ în această versiune de previzualizare.</p></div>
+<form onsubmit="event.preventDefault();alert('Acesta este un formular demonstrativ. Pentru publicare îl vom conecta la o adresă de e-mail sau la Google Forms.');">
+<div><label for="nume">Nume</label><input id="nume" placeholder="Numele tău"></div>
+<div><label for="telefon">Telefon</label><input id="telefon" type="tel" placeholder="Număr de telefon"></div>
+<div><label for="tip">Ce mobilier dorești?</label><select id="tip"><option>Bucătărie</option><option>Dormitor</option><option>Living</option><option>Dressing / hol</option><option>Alt proiect</option></select></div>
+<div><label for="oras">Localitate</label><input id="oras" value="București"></div>
+<div class="full"><label for="detalii">Detalii despre proiect</label><textarea id="detalii" placeholder="Dimensiuni, materiale, culori, buget estimativ..."></textarea></div>
+<div class="full"><button class="btn" type="submit">Trimite cererea (previzualizare)</button></div>
+<p class="formnote full">Datele de contact ale firmei vor fi adăugate înainte de publicarea finală.</p>
+</form></div></section>
+</main>
+<footer><div class="wrap foot"><div><a class="logo" style="color:#fff" href="#acasa">iMOBILA</a><p>Mobilă la comandă · București și împrejurimi</p></div><p>© 2026 iMOBILA. Prezentare demonstrativă.</p></div></footer>
+</body></html>
